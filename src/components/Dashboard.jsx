@@ -5,7 +5,7 @@ function Dashboard() {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="dashboard-container">
         <h2>Dashboard</h2>
       </div>
     </>
