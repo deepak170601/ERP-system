@@ -39,7 +39,7 @@ function Products() {
   return (
     <>
       <Navbar />
-      <h2>Products</h2>
+      <h1 className="products-h1">Products</h1>
       <div className="products">
         {products.map((product, i) => (
           <div key={product.name} className="product">
@@ -50,10 +50,10 @@ function Products() {
               <div>{product.stock_quantity} left in stock</div>
             </div>
             <div className="alter-product">
-              <div className="alter" onClick={() => edit_product(product)}>
+              <div className="alter-update" onClick={() => edit_product(product)}>
                 Update
               </div>
-              <div className="alter" onClick={() => delete_product(product)}>
+              <div className="alter-delete" onClick={() => delete_product(product)}>
                 Delete
               </div>
             </div>

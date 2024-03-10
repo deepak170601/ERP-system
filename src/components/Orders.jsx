@@ -59,7 +59,7 @@ function Orders() {
   return (
     <>
       <Navbar />
-      <h2>Orders</h2>
+      <h1 className="orders-h1">Orders</h1>
       <div className="orders">
         {orders.map((order, i) => (
           <div key={order.order_id} className="order">
@@ -70,8 +70,8 @@ function Orders() {
               <div>{order.status}</div>
             </div>
             <div className="alter-order">
-              <div className="alter" onClick={()=>update_order(order)}>Update</div>
-              <div className="alter" onClick={()=>delete_order(order)}>Delete</div>
+              <div className="alter-update" onClick={()=>update_order(order)}>Update</div>
+              <div className="alter-delete" onClick={()=>delete_order(order)}>Delete</div>
             </div>
           </div>
         ))}
