@@ -71,8 +71,8 @@ function Products() {
         <div>Stock left</div>
         <input className="input" name="product_stock" placeholder={product && product.stock_quantity} />
         <div className="confirm">
-          <div onClick={() => edit()}>Edit</div>
-          <div onClick={() => cancel()}>Cancel</div>
+          <div className="confirm-edit" onClick={() => edit()}>Edit</div>
+          <div className="confirm-cancel" onClick={() => cancel()}>Cancel</div>
         </div>
       </div>
 
@@ -83,8 +83,8 @@ function Products() {
         <div>{product && product.stock_quantity} left in stock</div>
         <h3>Do you really want to delete the product?</h3>
         <div className="confirm">
-          <div onClick={() => _delete()}>Delete</div>
-          <div onClick={() => cancel()}>Cancel</div>
+          <div className="confirm-delete" onClick={() => _delete()}>Delete</div>
+          <div className="confirm-cancel-delete" onClick={() => cancel()}>Cancel</div>
         </div>
       </div>
     </>

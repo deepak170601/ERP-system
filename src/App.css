@@ -136,7 +136,7 @@ body {
 
 
 .alter-update,
-.alter-delete {
+.alter-delete,.confirm-delete,.confirm-edit,.confirm-cancel {
     font-size: 14px;
     /* Slightly increased font size for better readability */
     display: inline-block;
@@ -156,11 +156,11 @@ body {
 
 }
 
-.alter-delete {
+.alter-delete,.confirm-delete,.confirm-cancel {
     background: linear-gradient(108.5deg, rgba(231, 69, 54, 0.82) 11.2%, rgba(255, 181, 17, 0.82) 68%);
 }
 
-.alter-update {
+.alter-update,.confirm-edit,.confirm-cancel-delete {
     background: radial-gradient(circle at 7.1% 15.6%, rgb(22, 160, 133) 0%, rgb(64, 240, 206) 100.3%);
 }
 
@@ -277,25 +277,16 @@ body {
     color: white;
 }
 
-.confirm :nth-child(1) {
-    background-color: rgba(0, 0, 130);
-    border: 2px solid rgba(0, 0, 130);
-}
 
 .confirm :nth-child(1):hover {
     background-color: white;
-    border: 2px solid rgba(0, 0, 130);
     color: rgba(0, 0, 130);
 }
 
-.confirm :nth-child(2) {
-    background-color: rgb(195, 0, 0);
-    border: 2px solid rgb(195, 0, 0);
-}
+
 
 .confirm :nth-child(2):hover {
     background-color: white;
-    border: 2px solid rgb(195, 0, 0);
     color: rgb(195, 0, 0);
 }
 
@@ -396,61 +387,19 @@ body {
     }
 }
 
-/* Medium screens (768px to 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .dashboard-container {
-        padding: 10px;
-    }
 
-    .order-summary,
-    .product-summary {
-        padding: 15px;
-    }
-
-    .canvas-container {
-        padding: 20px;
-    }
-
-    .pie-chart-canvas {
-        width: 300px;
-        height: 150px;
-        margin: 0 5px;
-    }
-}
-
-/* Large screens (1024px and above) */
-@media screen and (min-width: 1024px) {
-    .dashboard-container {
-        padding: 20px;
-    }
-
-    .order-summary,
-    .product-summary {
-        padding: 20px;
-    }
-
-    .canvas-container {
-        padding: 30px;
-    }
-
-    .pie-chart-canvas {
-        width: 400px;
-        height: 200px;
-        margin: 0 10px;
-    }
-}
 /* For width up to 320px */
 @media screen and (max-width: 320px) {
     .navbar a {
         font-size: 12px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .erp-icon {
         width: 30px;
         height: 30px;
         margin-left: 5px;
-        padding: 5px;
+        padding: 3px;
     }
 
     .product,
@@ -625,5 +574,46 @@ body {
     }
 }
 
+/* Medium screens (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .dashboard-container {
+        padding: 10px;
+    }
 
+    .order-summary,
+    .product-summary {
+        padding: 15px;
+    }
 
+    .canvas-container {
+        padding: 20px;
+    }
+
+    .pie-chart-canvas {
+        width: 300px;
+        height: 150px;
+        margin: 0 5px;
+    }
+}
+
+/* Large screens (1024px and above) */
+@media screen and (min-width: 1024px) {
+    .dashboard-container {
+        padding: 20px;
+    }
+
+    .order-summary,
+    .product-summary {
+        padding: 20px;
+    }
+
+    .canvas-container {
+        padding: 30px;
+    }
+
+    .pie-chart-canvas {
+        width: 400px;
+        height: 200px;
+        margin: 0 10px;
+    }
+}
