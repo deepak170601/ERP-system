@@ -90,8 +90,8 @@ function Orders() {
           <div id="Pending Payment" onClick={()=>{select_status("Pending Payment")}}>Pending Payment</div>
         </div>
         <div className="confirm">
-          <div onClick={()=>update()}>Update</div>
-          <div onClick={()=>cancel()}>Cancel</div>
+          <div className="alter-update" onClick={()=>update()}>Update</div>
+          <div className="alter-delete" onClick={()=>cancel()}>Cancel</div>
         </div>
       </div>
 
@@ -102,8 +102,8 @@ function Orders() {
         <div>{order && order.status}</div>
         <h3>Do you really want to delete the order?</h3>
         <div className="confirm">
-          <div onClick={()=>_delete()}>Delete</div>
-          <div onClick={()=>cancel()}>Cancel</div>
+          <div className="alter-delete" onClick={()=>_delete()}>Delete</div>
+          <div className="alter-update" onClick={()=>cancel()}>Cancel</div>
         </div>
       </div>
     </>

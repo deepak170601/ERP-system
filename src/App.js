@@ -2,7 +2,7 @@ import Dashboard from "./components/Dashboard";
 import Orders from "./components/Orders";
 import Products from "./components/Products";
 import "./App.css";
-
+import "./MediiaQuery.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

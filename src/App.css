@@ -1,86 +1,72 @@
+/* Remove scrollbar */
 body::-webkit-scrollbar {
     display: none;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* background-color: #d19e46ae;Gradient background that complements the given color */
     background: linear-gradient(135deg, #d7cec5 0%, #e4b38a 100%);
     user-select: none;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0; /* Reset default margin for body */
 }
 
+/* Common styles for h1 tags */
 .dashboard-h1,
 .orders-h1,
 .products-h1 {
-    margin-top: 70px; /* Adjusted margin-top for a more balanced spacing */
+    margin-top: 70px;
     margin-left: 20px;
     font-size: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
+
 /* Navbar styles */
 .navbar {
-   background-color: #000000;
+    background-color: #000000;
     color: #fff;
     display: flex;
     align-items: center;
-    justify-items:flex-end;
     position: fixed;
     width: 100%;
-    flex: 40px 1fr; /* Flex grow factor for each item */
-    padding: 0 20px; /* Added padding for better spacing */
     top: 0;
     left: 0;
     z-index: 20;
+    justify-content: space-between;
 }
 
 .erp-icon {
-    width: 45px; /* Slightly reduced icon size for better proportion */
+    width: 45px;
     height: 45px;
-    margin-left: 5px;
-    padding: 5px;
-    filter: brightness(120%); /* Adjusted brightness for better contrast */
+    filter: brightness(120%);
 }
 
 .links-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-left: 35px;
 }
 
 .navbar a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px; /* Adjusted font size for better readability */
+    font-size: 16px;
     padding: 15px;
     border-radius: 5px;
     transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
     margin: 0 10px;
 }
-.products {
-    display: flex;
-    justify-content: flex-start;
-    /* Adjusted from center for better spacing */
-    align-items: center;
-    /* Adjusted from center for better alignment */
-    flex-wrap: wrap;
-    padding-left: 20px;
-}
 
+/* .products and .orders styles */
+.products,
 .orders {
     display: flex;
     justify-content: flex-start;
-    /* Adjusted from center for better spacing */
     align-items: center;
-    /* Adjusted from center for better alignment */
     flex-wrap: wrap;
     padding-left: 20px;
-
 }
 
-/* Common styles for .product and .order */
 .product,
 .order {
     background-color: white;
@@ -91,85 +77,72 @@ body {
     box-sizing: border-box;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    /* Added transform property for a subtle scaling effect */
 }
 
-/* Hover effect for .product and .order */
 .product:hover,
 .order:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    /* Increased box-shadow on hover for a more pronounced effect */
     transform: scale(1.02);
-    /* Slightly scale up on hover for depth */
     background: linear-gradient(to bottom, #ffffff, #f8f8f8);
-    /* Gradient background for a subtle visual appeal */
 }
 
 .product-details :nth-child(1),
 .order-details :nth-child(1) {
     font-size: 18px;
-    /* Slightly reduced font size for better hierarchy */
     font-weight: bold;
-    /* Added bold for better emphasis on titles */
 }
 
 .product-details :nth-child(2),
 .order-details :nth-child(2) {
     font-size: 14px;
-    /* Adjusted font size for better readability */
     color: #666;
-    /* Changed to a lighter color for subtlety */
 }
 
 .product-details :nth-child(3),
 .order-details :nth-child(3) {
     font-size: 18px;
-    /* Adjusted font size for better hierarchy */
 }
 
 .product-details :nth-child(4) {
     font-size: 14px;
-    /* Adjusted font size for better readability */
     color: #888;
-    /* Changed to a lighter color for subtlety */
 }
 
-
+/* .alter styles */
 .alter-update,
-.alter-delete,.confirm-delete,.confirm-edit,.confirm-cancel {
+.alter-delete,
+.confirm-delete,
+.confirm-edit,
+.confirm-cancel {
     font-size: 14px;
-    /* Slightly increased font size for better readability */
     display: inline-block;
     padding: 8px 12px;
-    /* Increased padding for a more comfortable feel */
     background-color: #f0f0f0;
-    /* A slightly off-white background color for a cleaner look */
     border: 1px solid #ccc;
-    /* Added a subtle border for definition */
     border-radius: 8px;
-    /* Rounded corners for a softer appearance */
     margin-right: 10px;
     margin-top: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    /* Smooth transition on hover effect */
-
+    color: #000000;
 }
 
-.alter-delete,.confirm-delete,.confirm-cancel {
+.alter-delete,
+.confirm-delete,
+.confirm-cancel {
     background: linear-gradient(108.5deg, rgba(231, 69, 54, 0.82) 11.2%, rgba(255, 181, 17, 0.82) 68%);
+    color: #000000;
 }
 
-.alter-update,.confirm-edit,.confirm-cancel-delete {
+.alter-update,
+.confirm-edit,
+.confirm-cancel-delete {
     background: radial-gradient(circle at 7.1% 15.6%, rgb(22, 160, 133) 0%, rgb(64, 240, 206) 100.3%);
-}
-
-.alter:hover {
-    background-color: #dcdcdc;
-    /* Slightly darker background on hover for a subtle effect */
+    color: #000000;
 }
 
 
+/* .update-order, .delete-order, .edit-product, .delete-product styles */
 .update-order,
 .delete-order,
 .edit-product,
@@ -209,7 +182,10 @@ body {
 .edit-product :nth-child(3) {
     margin-top: 20px;
 }
-
+.alter-product :nth-child(1):hover,
+.alter-product :nth-child(2):hover {
+    background-color: white;
+}
 .background-blur {
     position: fixed;
     top: 0;
@@ -221,6 +197,7 @@ body {
     visibility: hidden;
 }
 
+/* .status styles */
 .status :nth-child(n) {
     font-weight: normal;
     font-size: 20px;
@@ -261,6 +238,7 @@ body {
     background-color: rgb(230, 97, 97);
 }
 
+/* .confirm styles */
 .confirm {
     display: flex;
     flex-direction: row;
@@ -274,20 +252,20 @@ body {
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.confirm :nth-child(1):hover,
+.confirm :nth-child(2):hover {
+    background-color: white;
+}
+
+.confirm :nth-child(1):hover {
     color: white;
 }
 
-
-.confirm :nth-child(1):hover {
-    background-color: white;
-    color: rgba(0, 0, 130);
-}
-
-
-
 .confirm :nth-child(2):hover {
-    background-color: white;
-    color: rgb(195, 0, 0);
+    color: white;
 }
 
 .input {
@@ -298,17 +276,7 @@ body {
     width: 50%;
 }
 
-
-/* App.css */
-.dashboard-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* Align items to the start */
-    flex-wrap: nowrap;
-    padding: 20px;
-}
-/* Default styles */
+/* Common styles for .dashboard-container */
 .dashboard-container {
     display: flex;
     align-items: flex-start;
@@ -316,6 +284,7 @@ body {
     padding: 20px;
 }
 
+/* Common styles for .summary containers */
 .order-summary,
 .product-summary {
     display: flex;
@@ -325,6 +294,7 @@ body {
     padding: 20px;
 }
 
+/* Common styles for .total-quantity-circle and .total-orders-circle */
 .total-quantity-circle,
 .total-orders-circle {
     display: flex;
@@ -333,7 +303,7 @@ body {
     justify-content: center;
 }
 
-
+/* .piechart-container styles */
 .piechart-container {
     color: #000000;
     width: 60%;
@@ -341,34 +311,47 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 400px !important;
+    height: 400px !important;
 }
 
 .piechart-container h2 {
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 
+/* .canvas-container styles */
 .canvas-container {
-    display: inline-block;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    padding: 20px;
+    width: 400px;
+    height: 400px;
+    padding: 0px !important;
 }
 
 .canvas-container h3 {
     margin: 0;
 }
 
+/* .pie-chart-canvas styles */
 .pie-chart-canvas {
     width: 400px;
     height: 200px;
     margin: 0 10px;
 }
+.total-orders-circle:hover circle,.total-quantity-circle:hover circle {
+    fill: #d87a4e; /* Replace 'your-hover-color' with the desired color */
+    stroke: "a0522d";
+}
+.total-orders-circle:hover text,.total-quantity-circle:hover text  {
+    fill: #ffffff; /* Replace 'your-hover-color' with the desired color */
+    stroke: "a0522d";
+}
+
 
 /* Media queries for responsiveness */
-
 /* Small screens (up to 767px) */
 @media screen and (max-width: 767px) {
     .dashboard-container {
@@ -387,65 +370,94 @@ body {
     }
 }
 
-
 /* For width up to 320px */
 @media screen and (max-width: 320px) {
     .navbar a {
-        font-size: 12px;
-        padding: 5px;
+        font-size: 15px;
+        margin: 0;
     }
 
     .erp-icon {
         width: 30px;
         height: 30px;
-        margin-left: 5px;
-        padding: 3px;
     }
 
     .product,
     .order {
-        padding: 14px;
+        padding: 12px;
     }
 
     .product-details :nth-child(1),
     .order-details :nth-child(1),
     .product-details :nth-child(3) {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .product-details :nth-child(2),
     .order-details :nth-child(2),
     .product-details :nth-child(4) {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .update-order,
     .delete-order,
     .edit-product,
     .delete-product {
-        width: 45%;
+        width: 80%;
     }
 
-    h2 {
-        margin-top: 36px;
-        padding: 8px 8px 0 16px;
-        margin-left: 16px;
-        font-size: 16px;
+    .navbar {
+        padding: 3px;
+    }
+    .dashboard-h1{
+        font-size: 23px;
     }
 }
 
 /* For width between 321px and 376px */
-@media screen and (min-width: 321px) and (max-width: 376px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
     .navbar a {
-        font-size: 14px;
-        padding: 11px;
+        font-size: 15px;
+        margin: 0;
     }
 
     .erp-icon {
-        width: 32px;
-        height: 32px;
-        margin-left: 6px;
-        padding: 6px;
+        width: 31px;
+        height: 31px;
+    }
+
+    .product,
+    .order {
+        padding: 14px;
+        margin: 9px;
+    }
+
+    .update-order,
+    .delete-order,
+    .edit-product,
+    .delete-product {
+        width: 80%;
+    }
+
+
+    .navbar {
+        padding: 5px;
+    }
+    .dashboard-h1{
+        font-size: 24px;
+    }
+}
+
+/* For width between 376px and 426px */
+@media screen and (min-width: 375px) and (max-width: 426px) {
+    .navbar a {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .erp-icon {
+        width: 33px;
+        height: 33px;
     }
 
     .product,
@@ -458,29 +470,27 @@ body {
     .delete-order,
     .edit-product,
     .delete-product {
-        width: 50%;
+        width: 80%;
     }
 
-    h2 {
-        margin-top: 40px;
-        padding: 13px 13px 0 26px;
-        margin-left: 20px;
-        font-size: 17px;
+
+    .navbar {
+        padding: 5px;
+    }
+    .dashboard-h1{
+        font-size: 26px;
     }
 }
 
-/* For width between 376px and 426px */
-@media screen and (min-width: 376px) and (max-width: 426px) {
+/* For width between 426px and 768px */
+@media screen and (min-width: 426px) and (max-width: 768px) {
     .navbar a {
-        font-size: 16px;
-        padding: 12px;
+        font-size: 18px;
     }
 
     .erp-icon {
         width: 36px;
         height: 36px;
-        margin-left: 8px;
-        padding: 7px;
     }
 
     .product,
@@ -493,64 +503,30 @@ body {
     .delete-order,
     .edit-product,
     .delete-product {
-        width: 50%;
-    }
-
-    h2 {
-        margin-top: 44px;
-        padding: 15px 15px 0 30px;
-        margin-left: 20px;
-        font-size: 20px;
-    }
-}
-
-/* For width between 426px and 768px */
-@media screen and (min-width: 426px) and (max-width: 768px) {
-    .navbar a {
-        font-size: 18px;
-        padding: 14px;
-    }
-
-    .erp-icon {
-        width: 40px;
-        height: 40px;
-        margin-left: 10px;
-        padding: 8px;
-    }
-
-    .product,
-    .order {
-        padding: 20px;
-        margin: 13px;
-    }
-
-    .update-order,
-    .delete-order,
-    .edit-product,
-    .delete-product {
         width: 70%;
     }
 
-    h2 {
-        margin-top: 48px;
-        padding: 17px 17px 0 34px;
-        margin-left: 25px;
-        font-size: 23px;
+
+    .navbar {
+        padding: 5px;
+    }
+    .dashboard-h1{
+        font-size: 28px;
     }
 }
 
 /* For width between 769px and 1024px */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .erp-icon{
+        margin-left: 10px;
+    }
     .navbar a {
         font-size: 20px;
-        padding: 16px;
     }
 
     .erp-icon {
-        width: 42px;
-        height: 42px;
-        margin-left: 14px;
-        padding: 10px;
+        width: 40px;
+        height: 40px;
     }
 
     .product,
@@ -563,19 +539,25 @@ body {
     .delete-order,
     .edit-product,
     .delete-product {
-        width: 85%;
+        width: 80%;
     }
 
-    h2 {
-        margin-top: 56px;
-        padding: 18px 18px 0 36px;
-        margin-left: 30px;
-        font-size: 25px;
+
+    .navbar {
+        padding: 4px;
     }
 }
 
 /* Medium screens (768px to 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .erp-icon{
+        margin-left: 10px;
+        padding: 10px;
+    }    
+    .navbar a {
+        font-size: 20px;
+    }
+
     .dashboard-container {
         padding: 10px;
     }
@@ -589,31 +571,47 @@ body {
         padding: 20px;
     }
 
+    .update-order,
+    .delete-order,
+    .edit-product,
+    .delete-product {
+        width: 50%;
+    }
+
     .pie-chart-canvas {
         width: 300px;
         height: 150px;
         margin: 0 5px;
     }
-}
 
-/* Large screens (1024px and above) */
-@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1024px) {    
+    .navbar a {
+        font-size: 25px;
+    }
+
     .dashboard-container {
-        padding: 20px;
+        padding: 10px;
     }
 
     .order-summary,
     .product-summary {
-        padding: 20px;
+        padding: 15px;
     }
 
     .canvas-container {
-        padding: 30px;
+        padding: 20px;
     }
 
-    .pie-chart-canvas {
-        width: 400px;
-        height: 200px;
-        margin: 0 10px;
-    }
+
+    .erp-icon{
+        margin-left: 10px;
+        padding: 10px;
+    }    
+}
+
+/* Large screens (1024px and above) */
+
+.alter-update:hover,.alter-delete:hover{
+    color: white;
 }
