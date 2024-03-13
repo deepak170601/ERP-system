@@ -16,13 +16,14 @@ function Dashboard() {
       <Navbar />
       <h1 className='dashboard-h1'>Dashboard</h1>
       <div className="dashboard-container">
+                <PieChart data={products} />
         <div className="order-summary">
           <TotalOrdersCircle totalOrders={totalOrders} />
         </div>
         <div className="product-summary">
           <TotalQuantityCircle totalQuantity={totalQuantity} />
         </div>
-        <PieChart data={products} />
+
       </div>
     </>
   );
