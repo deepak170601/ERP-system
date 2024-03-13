@@ -35,6 +35,13 @@ const PieChart = ({ data }) => {
           plugins: {
             title : {
               text:"Quantity Analysis",
+              display:true,
+              position: 'top', // You can change the position to 'bottom', 'left', 'right', or 'top'
+              align: 'center',
+              font: {
+                    size: 19, // You can adjust the font size as needed
+                    family: 'Montserrat, sans-serif',
+                }
             },
             legend: {
               display: true,
@@ -72,7 +79,6 @@ const PieChart = ({ data }) => {
     <div className='piechart-container'>
       
       <div className='canvas-container'>
-        <h3>Quantity Analysis</h3>
         <canvas className="pie-chart-canvas" ref={chartRef}></canvas>
       </div>
       

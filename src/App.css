@@ -137,7 +137,7 @@ body {
 .alter-update,
 .confirm-edit,
 .confirm-cancel-delete {
-    background: radial-gradient(circle at 7.1% 15.6%, rgb(22, 160, 133) 0%, rgb(64, 240, 206) 100.3%);
+    background: radial-gradient(circle at 7.1% 15.6%, rgb(38, 173, 146) 0%, rgb(64, 240, 206) 100.3%);
     color: #000000;
 }
 
@@ -312,7 +312,7 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 400px !important;
-    height: 400px !important;
+    height: 450px !important;
 }
 
 .piechart-container h2 {

@@ -8,7 +8,7 @@ const TotalQuantityCircle = ({ totalQuantity }) => {
         <h3>Product Quantitiy</h3>
         <div>
         <svg width="200" height="200">
-        <circle cx="100" cy="100" r="92" stroke="#ddd" strokeWidth="1" fill="#fff" />
+        <circle cx="100" cy="100" r="92" stroke="#ddd" strokeWidth="0" fill="#fff" />
         <text x="50%" y="50%" textAnchor="middle" dy="0.3em" fontSize="30" fill="#333">
           {totalQuantity}
         </text>
