@@ -1,4 +1,4 @@
-/* Remove scrollbar */
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -9,10 +9,10 @@ body {
     user-select: none;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0; /* Reset default margin for body */
+    margin: 0; 
 }
 
-/* Common styles for h1 tags */
+
 .dashboard-h1,
 .orders-h1,
 .products-h1 {
@@ -22,7 +22,6 @@ body {
     margin-bottom: 0;
 }
 
-/* Navbar styles */
 .navbar {
     background-color: #000000;
     color: #fff;
@@ -57,7 +56,7 @@ body {
     margin: 0 10px;
 }
 
-/* .products and .orders styles */
+
 .products,
 .orders {
     display: flex;
@@ -108,7 +107,7 @@ body {
     color: #888;
 }
 
-/* .alter styles */
+
 .alter-update,
 .alter-delete,
 .confirm-delete,
@@ -142,7 +141,6 @@ body {
 }
 
 
-/* .update-order, .delete-order, .edit-product, .delete-product styles */
 .update-order,
 .delete-order,
 .edit-product,
@@ -197,7 +195,7 @@ body {
     visibility: hidden;
 }
 
-/* .status styles */
+
 .status :nth-child(n) {
     font-weight: normal;
     font-size: 20px;
@@ -238,7 +236,6 @@ body {
     background-color: rgb(230, 97, 97);
 }
 
-/* .confirm styles */
 .confirm {
     display: flex;
     flex-direction: row;
@@ -276,7 +273,7 @@ body {
     width: 50%;
 }
 
-/* Common styles for .dashboard-container */
+
 .dashboard-container {
     display: flex;
     align-items: flex-start;
@@ -284,7 +281,7 @@ body {
     padding: 20px;
 }
 
-/* Common styles for .summary containers */
+
 .order-summary,
 .product-summary {
     display: flex;
@@ -294,7 +291,6 @@ body {
     padding: 20px;
 }
 
-/* Common styles for .total-quantity-circle and .total-orders-circle */
 .total-quantity-circle,
 .total-orders-circle {
     display: flex;
@@ -303,7 +299,6 @@ body {
     justify-content: center;
 }
 
-/* .piechart-container styles */
 .piechart-container {
     color: #000000;
     width: 60%;
@@ -320,7 +315,6 @@ body {
     padding: 0;
 }
 
-/* .canvas-container styles */
 .canvas-container {
     display: flex;
     align-items: center;
@@ -335,24 +329,21 @@ body {
     margin: 0;
 }
 
-/* .pie-chart-canvas styles */
 .pie-chart-canvas {
     width: 400px;
     height: 200px;
     margin: 0 10px;
 }
 .total-orders-circle:hover circle,.total-quantity-circle:hover circle {
-    fill: #d87a4e; /* Replace 'your-hover-color' with the desired color */
+    fill: #d87a4e; 
     stroke: "a0522d";
 }
 .total-orders-circle:hover text,.total-quantity-circle:hover text  {
-    fill: #ffffff; /* Replace 'your-hover-color' with the desired color */
+    fill: #ffffff; 
     stroke: "a0522d";
 }
 
 
-/* Media queries for responsiveness */
-/* Small screens (up to 767px) */
 @media screen and (max-width: 767px) {
     .dashboard-container {
         flex-direction: column;
@@ -370,7 +361,6 @@ body {
     }
 }
 
-/* For width up to 320px */
 @media screen and (max-width: 320px) {
     .navbar a {
         font-size: 15px;
@@ -414,7 +404,6 @@ body {
     }
 }
 
-/* For width between 321px and 376px */
 @media screen and (min-width: 321px) and (max-width: 375px) {
     .navbar a {
         font-size: 15px;
@@ -448,7 +437,6 @@ body {
     }
 }
 
-/* For width between 376px and 426px */
 @media screen and (min-width: 375px) and (max-width: 426px) {
     .navbar a {
         font-size: 16px;
@@ -482,7 +470,6 @@ body {
     }
 }
 
-/* For width between 426px and 768px */
 @media screen and (min-width: 426px) and (max-width: 768px) {
     .navbar a {
         font-size: 18px;
@@ -515,7 +502,6 @@ body {
     }
 }
 
-/* For width between 769px and 1024px */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .erp-icon{
         margin-left: 10px;
@@ -548,7 +534,6 @@ body {
     }
 }
 
-/* Medium screens (768px to 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .erp-icon{
         margin-left: 10px;
@@ -610,7 +595,6 @@ body {
     }    
 }
 
-/* Large screens (1024px and above) */
 
 .alter-update:hover,.alter-delete:hover{
     color: white;

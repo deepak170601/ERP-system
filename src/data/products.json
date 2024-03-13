@@ -135,13 +135,13 @@
     "name": "Air Purifier with HEPA Filter",
     "category": "Home Appliances",
     "price": 149.99,
-    "stock_quantity": 80
+    "stock_quantity": 180
   },
   {
     "name": "Luxury Bedding Set",
     "category": "Home & Living",
     "price": 159.99,
-    "stock_quantity": 40
+    "stock_quantity": 140
   },
   {
     "name": "Men's Leather Jacket",
@@ -171,13 +171,195 @@
     "name": "3-Piece Patio Furniture Set",
     "category": "Furniture",
     "price": 299.99,
-    "stock_quantity": 50
+    "stock_quantity": 250
   },
   {
     "name": "Desk Organizer and Charging Station",
     "category": "Office Supplies",
     "price": 24.99,
     "stock_quantity": 150
+  },
+  
+  {
+    "name": "Smartphone Y",
+    "category": "Electronics",
+    "price": 699.99,
+    "stock_quantity": 60
+  },
+  {
+    "name": "Laptop Ultra",
+    "category": "Electronics",
+    "price": 1299.99,
+    "stock_quantity": 80
+  },
+  {
+    "name": "4K Smart TV",
+    "category": "Electronics",
+    "price": 899.99,
+    "stock_quantity": 50
+  },
+  {
+    "name": "Bluetooth Earphones",
+    "category": "Electronics",
+    "price": 129.99,
+    "stock_quantity": 200
+  },
+  {
+    "name": "Juicer Blender",
+    "category": "Home Appliances",
+    "price": 49.99,
+    "stock_quantity": 220
+  },
+  {
+    "name": "Memory Foam Mattress",
+    "category": "Home & Living",
+    "price": 199.99,
+    "stock_quantity": 300
+  },
+  {
+    "name": "Women's Classic Watch",
+    "category": "Fashion",
+    "price": 89.99,
+    "stock_quantity": 150
+  },
+  {
+    "name": "Men's Backpack",
+    "category": "Fashion",
+    "price": 69.99,
+    "stock_quantity": 80
+  },
+  {
+    "name": "Fitness Smart Band",
+    "category": "Health & Wellness",
+    "price": 59.99,
+    "stock_quantity": 150
+  },
+  {
+    "name": "Wireless Bluetooth Earpiece",
+    "category": "Electronics",
+    "price": 29.99,
+    "stock_quantity": 180
+  },
+  {
+    "name": "Gaming Console Pro",
+    "category": "Electronics",
+    "price": 549.99,
+    "stock_quantity": 70
+  },
+  {
+    "name": "Professional Camera Kit",
+    "category": "Electronics",
+    "price": 899.99,
+    "stock_quantity": 40
+  },
+  {
+    "name": "Smart Robotic Vacuum",
+    "category": "Home Appliances",
+    "price": 299.99,
+    "stock_quantity": 90
+  },
+  {
+    "name": "Non-Stick Cookware Set",
+    "category": "Home & Living",
+    "price": 79.99,
+    "stock_quantity": 60
+  },
+  {
+    "name": "Women's Running Shoes",
+    "category": "Fashion",
+    "price": 99.99,
+    "stock_quantity": 120
+  },
+  {
+    "name": "Men's Smart Watch",
+    "category": "Fashion",
+    "price": 139.99,
+    "stock_quantity": 50
+  },
+  {
+    "name": "High-Density Yoga Mat",
+    "category": "Health & Wellness",
+    "price": 39.99,
+    "stock_quantity": 200
+  },
+  {
+    "name": "Fast Wireless Charger",
+    "category": "Electronics",
+    "price": 24.99,
+    "stock_quantity": 250
+  },
+  {
+    "name": "Living Room Sofa Set",
+    "category": "Furniture",
+    "price": 499.99,
+    "stock_quantity": 100
+  },
+  {
+    "name": "Color-Changing LED Desk Lamp",
+    "category": "Home & Living",
+    "price": 34.99,
+    "stock_quantity": 150
+  },
+  {
+    "name": "Noise-Canceling Wireless Earbuds",
+    "category": "Electronics",
+    "price": 149.99,
+    "stock_quantity": 60
+  },
+  {
+    "name": "Graphic Drawing Tablet",
+    "category": "Electronics",
+    "price": 179.99,
+    "stock_quantity": 60
+  },
+  {
+    "name": "Smart Air Purifier",
+    "category": "Home Appliances",
+    "price": 169.99,
+    "stock_quantity": 100
+  },
+  {
+    "name": "Premium Bedding Set",
+    "category": "Home & Living",
+    "price": 189.99,
+    "stock_quantity": 80
+  },
+  {
+    "name": "Women's Leather Jacket",
+    "category": "Fashion",
+    "price": 199.99,
+    "stock_quantity": 70
+  },
+  {
+    "name": "Men's Crossbody Bag",
+    "category": "Fashion",
+    "price": 79.99,
+    "stock_quantity": 120
+  },
+  {
+    "name": "Smart Water Bottle with GPS",
+    "category": "Health & Wellness",
+    "price": 49.99,
+    "stock_quantity": 180
+  },
+  {
+    "name": "Adjustable Laptop Stand",
+    "category": "Electronics",
+    "price": 39.99,
+    "stock_quantity": 100
+  },
+  {
+    "name": "5-Piece Outdoor Furniture Set",
+    "category": "Furniture",
+    "price": 399.99,
+    "stock_quantity": 50
+  },
+  {
+    "name": "Desk Drawer Organizer",
+    "category": "Office Supplies",
+    "price": 19.99,
+    "stock_quantity": 150
   }
+
 
 ]
