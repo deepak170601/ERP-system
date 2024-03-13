@@ -277,7 +277,7 @@ body {
 .dashboard-container {
   display: flex;
   flex-direction: row; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  align-items: flex-start; /* Center items horizontally */
   justify-content: space-between; /* Distribute space between items */
   height: 100%; /* Ensure the container takes the full height */
 }
