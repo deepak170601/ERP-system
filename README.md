@@ -10,7 +10,7 @@ The goal of this project is to create a simplified interface for an ERP (Enterpr
 ## Installation
 
 ```bash
-git clone https://github.com/walker-617/ERP-System.git
+git clone https://github.com/deepak170601/ERP-system.git
 ```
 ```bash
 cd ERP-System
