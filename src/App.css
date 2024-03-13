@@ -275,13 +275,20 @@ body {
 
 
 .dashboard-container {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    padding: 20px;
+  display: flex;
+  flex-direction: row; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-between; /* Distribute space between items */
+  height: 100%; /* Ensure the container takes the full height */
 }
 
 
+.calendar-container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
 .order-summary,
 .product-summary {
     display: flex;
@@ -401,6 +408,9 @@ body {
     }
     .dashboard-h1{
         font-size: 23px;
+    }
+    .calendar-container{
+        margin-left: 40px;
     }
 }
 
@@ -568,6 +578,9 @@ body {
         height: 150px;
         margin: 0 5px;
     }
+    .calendar-container{
+        margin-right: 20px;
+    }
 
 }
 @media screen and (min-width: 1024px) {    
@@ -592,7 +605,10 @@ body {
     .erp-icon{
         margin-left: 10px;
         padding: 10px;
-    }    
+    } 
+        .calendar-container{
+        margin-right: 20px;
+    }   
 }
 
 
